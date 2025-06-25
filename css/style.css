@@ -1,0 +1,97 @@
+
+
+
+/* Estilos generales */
+
+
+/* Encabezado */
+header {
+    background-color: #fff;
+   
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+     color: rgb(236, 203, 14);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    
+   
+}
+
+nav ul li {
+   
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(236, 203, 14);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(71, 65, 39);
+    text-decoration: underline;
+}
+
+/* Contenido */
+.hero {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(96, 102, 17, 0.1);
+    color: black;
+    background-color: #b9f9b8;
+    
+}
+
+
+
+.hero .contenido {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero .logo {
+  width: 50%;
+}
+
+.hero .logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.hero .texto {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%; 
+  
+}
+.hero .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-bottom: 20 px;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #fff;
+    color: black;
+    text-align: center;
+}
