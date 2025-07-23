@@ -1,13 +1,45 @@
 
-
-
 /* Estilos generales */
+
+/*popup cokies*/
+
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 400px;
+  background: #fffbe6;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 9999;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.cookie-popup button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background-color: rgb(239, 177, 177);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cookie-popup button:hover {
+  background-color: rgb(164, 179, 31);
+}
 
 
 /* Encabezado */
 header {
     background-color: #fff;
-   
+   position: relative;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -38,6 +70,46 @@ nav ul li a:hover {
     color: rgb(71, 65, 39);
     text-decoration: underline;
 }
+/* Estilos del menú  hamburguesa y movil*/
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(236, 203, 14);
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+    flex-wrap: wrap;
+    position: relative; /* Necesario para el menú desplegable */
+  }
+
+  nav ul {
+    display: none; /* Oculta el menú */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+/* Banner */
 .banner {
     width: 100%;
     height: 250px; 
@@ -49,6 +121,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover; /* recorta la imagen para cubrir bien el espacio */
     display: block;
+    border-radius: 8px;
 }
 
 
@@ -232,7 +305,91 @@ nav ul li a:hover {
   margin-bottom: 1rem;
   text-align: center;
 }
+/* Media Queris para el movil */
+@media (max-width: 768px) {
+  .hero .contenido,
+  .hero1 .contenido,
+  .hero2 .contenido {
+    flex-direction: column; /* Apila imagen y texto */
+    align-items: center;
+  }
 
+  .hero .logo,
+  .hero .texto,
+  .hero1 .logo,
+  .hero1 .texto,
+  .hero2 .logo,
+  .hero2 .texto {
+    width: 100%; /* Imagen y texto al 100% de ancho */
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .hero .texto,
+  .hero1 .texto,
+  .hero2 .texto {
+    align-items: center;
+  }
+}
+
+/*contacto*/
+#Unete{
+    background-color: rgb(213, 225, 253);
+    color: rgb(239, 240, 234);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#Unete h2 {
+    color: rgb(15, 13,13);
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: rgb(218, 241, 157);
+}
+
+form button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background:rgb(239, 177, 177);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+form button:hover {
+    background: rgb(164, 179, 31);
+}
+
+form label {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: rgb(15, 13, 13);
+}
 /* Footer */
 footer {
     margin-top: 3rem;
