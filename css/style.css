@@ -52,7 +52,7 @@ nav ul li a:hover {
 }
 
 
-/* Contenido */
+/* Contenido 1 */
 .hero {
     margin: 20px;
     padding: 20px;
@@ -98,7 +98,109 @@ nav ul li a:hover {
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-bottom: 20 px;
+    text-align: center;
 }
+
+/* Contenido 2 */
+.hero1 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(96, 102, 17, 0.1);
+    color: black;
+    background-color: #f9b8e1;
+    
+}
+
+
+
+.hero1 .contenido {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero1 .logo {
+  width: 50%;
+}
+
+.hero1 .logo img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.hero1 .texto {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%; 
+  
+}
+.hero1 .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-bottom: 20 px;
+    text-align: center;
+}
+
+
+/* Contenido 3 */
+.hero2 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(96, 102, 17, 0.1);
+    color: black;
+    background-color: #f7d1b8;
+    
+}
+
+
+
+.hero2 .contenido {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero2 .logo {
+  width: 50%;
+}
+
+.hero2 .logo img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.hero2 .texto {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%; 
+  
+  
+}
+.hero2 .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-bottom: 20 px;
+    text-align: center;
+}
+/* Sección Pueblo */
 .pueblo .contenido {
   display: flex;
   flex-direction: column; /* Texto arriba, imagen abajo */
