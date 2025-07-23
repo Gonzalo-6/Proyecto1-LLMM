@@ -38,6 +38,19 @@ nav ul li a:hover {
     color: rgb(71, 65, 39);
     text-decoration: underline;
 }
+.banner {
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* recorta la imagen para cubrir bien el espacio */
+    display: block;
+}
+
 
 /* Contenido */
 .hero {
@@ -85,6 +98,37 @@ nav ul li a:hover {
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-bottom: 20 px;
+}
+.pueblo .contenido {
+  display: flex;
+  flex-direction: column; /* Texto arriba, imagen abajo */
+  width: 100%;
+  gap: 20px;
+}
+
+.pueblo .foto,
+.pueblo .texto {
+  width: 100%;
+}
+
+.pueblo .foto img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.pueblo .texto {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pueblo .texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Footer */
