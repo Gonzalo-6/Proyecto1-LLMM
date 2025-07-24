@@ -137,7 +137,6 @@ nav ul li a:hover {
 }
 
 
-
 .hero .contenido {
   display: flex;
   width: 100%;
@@ -173,6 +172,36 @@ nav ul li a:hover {
     margin-bottom: 20 px;
     text-align: center;
 }
+
+/* mis datos personales*/
+.hero3 {
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(96, 102, 17, 0.1);
+  color: black;
+  background-color: #b9f9b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px; /* Limita el ancho para que no se vea gigante */
+}
+
+.hero3 .texto1 {
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero3 .texto1 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 
 /* Contenido 2 */
 .hero1 {
